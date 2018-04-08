@@ -50,7 +50,6 @@ t.start()
 
 
 while True:
-    global e
     if e == 1:
         break
     time.sleep(10)
