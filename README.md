@@ -36,6 +36,7 @@ sudo apt-get install alsa-utils
 三：布置工程文件：
 
 1.下载工程
+cd /home
 sudo wget https://github.com/biabianm/hello-world/archive/master.zip 
 
 2.解压
@@ -61,6 +62,9 @@ ps aux|grep python3
 
 9.查看ip地址
 ifconfig
+
+10.发送测试数据
+{"name":"step_water1"}
 
 最后根据实际需要修改main.py里面的创建UDP的ip地址
 
