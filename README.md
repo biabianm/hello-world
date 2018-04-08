@@ -4,7 +4,7 @@ my first git project
 这个工程用来控制树莓派作为声音控制系统，当接收到udp消息后，根据消息内容播放对应的音频。
 这里播放使用的是aplay，他能够实现立刻播放，没有延迟。
 同时，为了能够多通道同时播放，我用python调用命令行工具，在多任务中调用aplay，通过不同的通道，播放不同的音频文件。
-
+'''
 这里是我查看了我的音频设备信息
 pi@raspberrypi:~ $aplay -l
 card 0: Device [USB Audio Device], device 0: USB Audio [USB Audio]
@@ -23,12 +23,12 @@ card 1: ALSA [bcm2835 ALSA], device 0: bcm2835 ALSA [bcm2835 ALSA]
 card 1: ALSA [bcm2835 ALSA], device 1: bcm2835 ALSA [bcm2835 IEC958/HDMI]
   Subdevices: 1/1
   Subdevice #0: subdevice #0
-  
+ ''' 
   配置方法：
   新环境布置步骤及相关命令：
+  
 一：ssh
 sudo raspi-config->5->ps2
-
 
 二：aplay
 sudo apt-get install alsa-utils
