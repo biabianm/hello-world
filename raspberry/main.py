@@ -1,5 +1,6 @@
 import os,time,sys
 import threading,json,socket
+from GetIP import ip_addr
 
 def play_audio(name,c=1):
     order = 'aplay -D plughw:1,0,{1} /home/wav/{0}.wav'.format(name,c)
@@ -23,7 +24,7 @@ global e
 e = 0
 
 def make_server():
-    ip = '192.168.1.100'
+    ip = ip_addr#'192.168.1.100'
     s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     s.bind((ip,9998))
     print('Bind UDP on 9998 ',ip)
