@@ -40,8 +40,8 @@ def make_server():
             obj=json.loads(data)
             play_bash(obj['name'])
 
-        except Exception as e:
-            print(repr(e))
+        except Exception as err:
+            print(repr(err))
 
 
 t = threading.Thread(target=make_server,daemon=True)
